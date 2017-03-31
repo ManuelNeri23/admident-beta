@@ -1,0 +1,56 @@
+body
+  background-color: $main-blue
+  @media only screen and (min-width: $break-sm-min)
+    background-color: white
+.logo-login
+  margin: 150px 0 0 0
+  margin-bottom: 50px
+.form-lite
+  margin-top: 20px
+  text-align: center
+.splash-text
+  font-size: 15px
+  text-align: center
+  color: $white
+  font-family: 'Gotham-Bold', sans-serif
+.input-lite
+  padding: 0px
+  border: 1px solid  $side-gray-lite
+  background-color: $main-blue
+  //transition: border 0.3s
+  color: $side-gray-lite
+  font-size: 10pt
+  text-align: center
+  margin-bottom: -1px
+.input-lite:focus
+  border: solid 2px $side-gray-lite
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
+  transition: none
+  -moz-transition: none
+  -webkit-transition: none
+.input-lite::-webkit-input-placeholder
+  color: $main-gray-lite
+  font-family: 'Gotham-LightItalic', sans-serif
+.input-lite:-moz-placeholder
+  color: $main-gray-lite
+  font-family: 'Gotham-LightItalic', sans-serif
+.input-lite:-ms-input-placeholder
+  color: $main-gray-lite
+  font-family: 'Gotham-LightItalic', sans-serif
+.top-rounded
+  border-radius: 6px 6px 0 0
+.bottom-rounded
+  border-radius: 0 0 6px 6px
+.btn-login
+  border: 1px solid $white
+  border-radius: 6px
+  margin-top: 30px
+  color: $white
+  font-family: 'Gotham-Bold'
+  font-size: 10pt
+  padding: 8px 60px
+.btn-login:focus
+  background-color: $white
+  color: $main-blue

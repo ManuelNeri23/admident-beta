@@ -1,0 +1,33 @@
+.input-gray
+  color: $main-gray-dark
+  border: 2px solid $main-gray-lite
+  background-color: $side-gray-lite
+  box-shadow: inset 0 0px 0px rgba(0,0,0,.075)
+  transition: border 0.3s
+  font-size: 10pt
+  padding: 0px 12px
+  @media only screen and (min-width: $break-sm-min)
+    font-size: 14pt
+.input-clear
+  color: $main-gray-dark
+  border: 2px solid $main-gray-lite
+  background-color: $white
+  box-shadow: inset 0 0px 0px rgba(0,0,0,.075)
+  transition: border 0.3s
+  font-size: 10pt
+  padding: 0px 12px
+  @media only screen and (min-width: $break-sm-min)
+    font-size: 14pt
+.input-gray:focus, .input-clear:focus
+  border: 2px solid $side-gray-dark
+.input-gray::-webkit-input-placeholder, .input-clear::-webkit-input-placeholder
+  color: $side-gray-dark
+  font-family: 'Lato-Italic-clear', sans-serif
+.input-gray::-moz-input-placeholder, .input-clear::-moz-input-placeholder
+  color: $side-gray-dark
+  font-family: 'Lato-Italic-clear', sans-serif
+.input-gray:-ms-input-placeholder, .input-clear:-ms-input-placeholder
+  color: $side-gray-dark
+  font-family: 'Lato-Italic-clear', sans-serif
+select.sharp
+  -webkit-appearance: none

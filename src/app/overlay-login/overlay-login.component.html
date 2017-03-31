@@ -1,0 +1,25 @@
+<div class="overlay-login">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="overlay-login-text">
+          <!-- <span>{{homeTitle}}</span> -->
+          <span>{{user.name}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <form action="" class="form-overlay">
+          <label class="sr-only" for="usr">Name:</label>
+          <!-- <input  type="text" class="form-control input-overlay sharp" id="overlay-name" placeholder="Usuario" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Usuario'" [value]="myUser"> -->
+          <input [(ngModel)]="user.name" class="form-control input-overlay sharp" name="overlay-name" id="overlay-name" placeholder="Usuario" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Usuario'">
+          <label class="sr-only" for="pwd">Password:</label>
+          <input type="password" class="form-control input-overlay sharp" id="overlay-pwd" placeholder="Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contraseña'" value="{{myPswd}}">
+          <a (click)="alertMe('Bienvenido Manu')" class="btn btn-overlay sharp hvr-shrink">Iniciar sesión <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <ng-content></ng-content> -->
